@@ -3,13 +3,13 @@ import Link from "next/link";
 import CTA from "../../comps/CTA";
 import subpage from "../../styles/Subpage.module.css";
 
-const About = () => {
-    return (
+const Services = () => {
+    return ( 
         <>
             <div className={[subpage.subPageHeader, "section"].join(" ")}>
                 <div className="row">
                     <div className="col">
-                        <h1>About</h1>
+                        <h1>Services</h1>
                         <p>Sed vitae finibus ipsum, ut vehicula risus</p>
                     </div>
                 </div>
@@ -78,7 +78,7 @@ const About = () => {
 
             <CTA />
         </>
-    );
+     );
 }
-
-export default About;
+ 
+export default Services;

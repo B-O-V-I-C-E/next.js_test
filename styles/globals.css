@@ -29,6 +29,23 @@ a {
   padding: 8px 16px;
   display: inline-block;
   border-radius: 8px;
+  transition: 100ms ease-in-out;
+}
+
+.button a::after {
+  content: " >";
+  margin-left: -2ch;
+  opacity: 0;
+  transition: inherit;
+}
+
+.button a:hover {
+  padding: 8px 12px;
+}
+
+.button a:hover::after {
+  margin-left: 0;
+  opacity: 1;
 }
 
 img {
