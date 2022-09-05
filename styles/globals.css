@@ -5,6 +5,11 @@ html, body {
   background-color: #0c0c0c;
   font-family: Arial, Helvetica, sans-serif;
   color: #f0f0f0;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.2;
 }
 
 a {
@@ -29,11 +34,13 @@ a {
 }
 
 .col {
-  flex-grow: 1;
+  flex: 1;
+  margin-right: 16px;
 }
 
 .col + .col {
-  margin-left: 5%;
+  margin-left: 16px;
+  margin-right: 0;
 }
 
 /* Header */
@@ -67,4 +74,9 @@ a {
   width: 1px;
   height: 20px;
   background-color: #f0f0f030;
+}
+
+/* Footer */
+footer {
+  background-color: #030303;
 }
