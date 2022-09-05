@@ -9,7 +9,7 @@ const Services = () => {
             <div className={[subpage.subPageHeader, "section"].join(" ")}>
                 <div className="row">
                     <div className="col">
-                        <h1>Services</h1>
+                        <h1>Our Services</h1>
                         <p>Sed vitae finibus ipsum, ut vehicula risus</p>
                     </div>
                 </div>
