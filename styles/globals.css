@@ -22,7 +22,7 @@ a {
 .main_header {
   align-items: stretch;
   justify-content: space-between;
-  padding: 0;
+  padding: 0 !important;
 }
 
 .main_header .logo {
