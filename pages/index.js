@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import CTA from "../comps/CTA";
 import styles from "../styles/Home.module.css";
-import { motion, AnimatePresence } from "framer-motion"
+import { motion } from "framer-motion"
 
 const container = {
   hidden: { 
@@ -35,14 +35,14 @@ const item = {
 export default function Home() {
   return (
     <>
-      <AnimatePresence><motion.div className={[styles.hero, "section"].join(" ")} 
+      <motion.div className={[styles.hero, "section"].join(" ")} 
       variants={container} initial="hidden" whileInView={"show"} exit={{ scaleY: 0 }}>
         <motion.div className="row" variants={item}>
           <div className="col">
             <h1>Welcome Home</h1>
           </div>
         </motion.div>
-      </motion.div></AnimatePresence>
+      </motion.div>
 
       <div className="section">
 
