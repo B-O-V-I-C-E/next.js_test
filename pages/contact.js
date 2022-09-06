@@ -1,4 +1,3 @@
-import CTA from "../comps/CTA";
 import subpage from "../styles/Subpage.module.css";
 
 const Contact = () => {
@@ -22,9 +21,6 @@ const Contact = () => {
                                 type="text"
                                 id="roll"
                                 name="roll"
-                                required
-                                minlength="10"
-                                maxlength="20"
                             />
                             <label for="name">Name:</label>
                             <input type="text" id="name" name="name" required />
