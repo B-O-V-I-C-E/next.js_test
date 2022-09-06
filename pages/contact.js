@@ -1,16 +1,43 @@
 import subpage from "../styles/Subpage.module.css";
+import { motion, AnimatePresence } from "framer-motion";
+import SubpageHeader from "../comps/Subpage-head";
+
+const container = {
+    hidden: {
+      opacity: 0,
+      scale: .98,
+      transition: {
+        staggerChildren: 0.25,
+      }
+    },
+    show: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        staggerChildren: 0.25,
+      }
+    }
+  }
+  
+  const item = {
+    hidden: {
+      opacity: 0,
+      scale: .98,
+    },
+    show: {
+      opacity: 1,
+      scale: 1,
+    },
+  }
+
+  const page = {
+    name: "Contact Us"
+  }
 
 const Contact = () => {
     return (
         <>
-            <div className={[subpage.subPageHeader, "section"].join(" ")}>
-                <div className="row">
-                    <div className="col">
-                        <h1>Contact Us</h1>
-                        <p>Sed vitae finibus ipsum, ut vehicula risus</p>
-                    </div>
-                </div>
-            </div>
+            <SubpageHeader />
 
             <div  className={[subpage.standout, "section"].join(" ")}>
                 <div className="row">

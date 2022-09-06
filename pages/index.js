@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import CTA from "../comps/CTA";
 import styles from "../styles/Home.module.css";
-import { motion, AnimatePresence } from "framer-motion"
+import { motion, AnimatePresence } from "framer-motion";
 
 const container = {
   hidden: {
@@ -25,10 +25,13 @@ const item = {
   hidden: {
     opacity: 0,
     scale: .98,
+    translateX: '-100px',
   },
+
   show: {
     opacity: 1,
     scale: 1,
+    translateX: '0px',
   },
 }
 
@@ -36,12 +39,14 @@ export default function Home() {
   return (
     <>
       <AnimatePresence><motion.div className={[styles.hero, "section"].join(" ")}
-        variants={container} initial="hidden" whileInView={"show"} exit={{ scaleY: 0 }}>
-        <motion.div className="row" variants={item}>
+        variants={container} initial="hidden" whileInView={"show"} exit={{ scaleY: 0 }} viewport={{ amount: "some", margin: "-150px" }}>
+        <div className="row">
           <div className="col">
-            <h1>Welcome Home</h1>
+            <motion.h1 variants={item}>Welcome Home</motion.h1>
+            <motion.p variants={item}>Add your subpage description here</motion.p>
+            <motion.div variants={item} className="button"><Link href={"/contact"}><a>Get Started</a></Link></motion.div>
           </div>
-        </motion.div>
+        </div>
       </motion.div></AnimatePresence>
 
       <div className="section">

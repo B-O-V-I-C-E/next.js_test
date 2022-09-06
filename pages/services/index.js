@@ -1,19 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import CTA from "../../comps/CTA";
-import subpage from "../../styles/Subpage.module.css";
+import SubpageHeader from "../../comps/Subpage-head";
 
 const Services = () => {
     return ( 
         <>
-            <div className={[subpage.subPageHeader, "section"].join(" ")}>
-                <div className="row">
-                    <div className="col">
-                        <h1>Our Services</h1>
-                        <p>Sed vitae finibus ipsum, ut vehicula risus</p>
-                    </div>
-                </div>
-            </div>
+            <SubpageHeader />
 
             <div className="section">
 

@@ -1,19 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import CTA from "../../comps/CTA";
+import SubpageHeader from "../../comps/Subpage-head";
 import subpage from "../../styles/Subpage.module.css";
 
 const About = () => {
     return (
         <>
-            <div className={[subpage.subPageHeader, "section"].join(" ")}>
-                <div className="row">
-                    <div className="col">
-                        <h1>About Us</h1>
-                        <p>Sed vitae finibus ipsum, ut vehicula risus</p>
-                    </div>
-                </div>
-            </div>
+            <SubpageHeader />
 
             <div className={[subpage.standout, "section"].join(" ")}>
 
