@@ -36,7 +36,7 @@ export default function Home() {
   return (
     <>
       <motion.div className={[styles.hero, "section"].join(" ")} 
-      variants={container} initial="hidden" whileInView={"show"} exit={{ scaleY: 0 }}>
+      variants={container} initial="hidden" whileInView={"show"}>
         <motion.div className="row" variants={item}>
           <div className="col">
             <h1>Welcome Home</h1>
