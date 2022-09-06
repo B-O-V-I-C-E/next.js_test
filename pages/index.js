@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import CTA from "../comps/CTA";
 import styles from "../styles/Home.module.css";
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
 
 const container = {
   hidden: { 
