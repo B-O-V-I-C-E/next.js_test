@@ -56,7 +56,7 @@ const Services = () => {
                     </div>
 
                     <div className="col">
-                        <Image src="/City.svg" width={1500} height={736} />
+                        <Image src="/City.svg" width={1500} height={736} alt="Test Image"/>
                     </div>
 
                 </div>
@@ -76,7 +76,7 @@ const Services = () => {
                     </div>
 
                     <div className="col">
-                        <Image src="/City.svg" width={1500} height={736} />
+                        <Image src="/City.svg" width={1500} height={736} alt="Test Image"/>
                     </div>
 
                 </div>
@@ -96,7 +96,7 @@ const Services = () => {
                     </div>
 
                     <div className="col">
-                        <Image src="/City.svg" width={1500} height={736} />
+                        <Image src="/City.svg" width={1500} height={736} alt="Test Image"/>
                     </div>
 
                 </div>

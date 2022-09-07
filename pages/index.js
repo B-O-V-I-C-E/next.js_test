@@ -88,7 +88,7 @@ export default function Home() {
           </div>
 
           <div className="col">
-            <Image src="/City.svg" width={1500} height={736} />
+            <Image src="/City.svg" width={1500} height={736} alt="Test Image"/>
           </div>
 
         </div>
@@ -96,7 +96,7 @@ export default function Home() {
         <div className="row">
 
           <div className="col">
-            <Image src="/City.svg" width={1500} height={736} />
+            <Image src="/City.svg" width={1500} height={736} alt="Test Image"/>
           </div>
 
           <div className="col">
