@@ -4,6 +4,7 @@ import CTA from "../comps/CTA";
 import styles from "../styles/Home.module.css";
 import { motion, AnimatePresence } from "framer-motion";
 import Card from "../comps/Card";
+const icon = require('../public/Test-Icon.png');
 
 const container = {
   hidden: {
