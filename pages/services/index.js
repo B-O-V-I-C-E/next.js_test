@@ -3,6 +3,7 @@ import Link from "next/link";
 import CTA from "../../comps/CTA";
 import SubpageHeader from "../../comps/Subpage-head";
 import { motion } from "framer-motion";
+import Photo_default from "../../comps/Photo-default";
 
 const container = {
     hidden: {
@@ -56,7 +57,7 @@ const Services = () => {
                     </div>
 
                     <div className="col">
-                        <Image src="/City.svg" width={1500} height={736} alt="Test Image"/>
+                        <Photo_default s="/City.svg" w="1500" h="736" alt="Test Image" />
                     </div>
 
                 </div>
@@ -76,7 +77,7 @@ const Services = () => {
                     </div>
 
                     <div className="col">
-                        <Image src="/City.svg" width={1500} height={736} alt="Test Image"/>
+                        <Photo_default s="/City.svg" w="1500" h="736" alt="Test Image" />
                     </div>
 
                 </div>
@@ -96,7 +97,7 @@ const Services = () => {
                     </div>
 
                     <div className="col">
-                        <Image src="/City.svg" width={1500} height={736} alt="Test Image"/>
+                        <Photo_default s="/City.svg" w="1500" h="736" alt="Test Image" />
                     </div>
 
                 </div>

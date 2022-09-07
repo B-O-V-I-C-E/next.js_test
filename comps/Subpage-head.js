@@ -32,7 +32,6 @@ const item = {
 }
 
 const SubpageHeader = (props) => {
-    console.log(props);
     return (
         <AnimatePresence><motion.div className={[subpage.subPageHeader, "section"].join(" ")}
             variants={container} initial="hidden" whileInView={"show"} exit={{ scaleY: 0 }} viewport={{ amount: "some", margin: "-150px" }}>

@@ -4,6 +4,7 @@ import CTA from "../comps/CTA";
 import styles from "../styles/Home.module.css";
 import { motion, AnimatePresence } from "framer-motion";
 import Card from "../comps/Card";
+import Photo_default from "../comps/Photo-default";
 
 const container = {
   hidden: {
@@ -87,7 +88,7 @@ export default function Home() {
           </div>
 
           <div className="col">
-            <Image src="/City.svg" width={1500} height={736} alt="Test Image"/>
+            <Photo_default s="/City.svg" w="1500" h="736" alt="Test Image" />
           </div>
 
         </div>
@@ -95,7 +96,7 @@ export default function Home() {
         <div className="row">
 
           <div className="col">
-            <Image src="/City.svg" width={1500} height={736} alt="Test Image"/>
+            <Photo_default s="/City.svg" w="1500" h="736" alt="Test Image" />
           </div>
 
           <div className="col">
