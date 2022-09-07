@@ -4,7 +4,6 @@ import CTA from "../comps/CTA";
 import styles from "../styles/Home.module.css";
 import { motion, AnimatePresence } from "framer-motion";
 import Card from "../comps/Card";
-const icon = require('../public/Test-Icon.png');
 
 const container = {
   hidden: {
@@ -81,9 +80,8 @@ export default function Home() {
 
             <motion.div className="text_block left" variants={container} initial={"hidden"} whileInView={"show"} viewport={{ amount: "some", margin: "-150px", once: true }}>
               <motion.h2 variants={item}>This is the first section</motion.h2>
-              <motion.p variants={item}> Curabitur quis libero ullamcorper, vulputate ipsum non, malesuada ipsum. Nam facilisis tellus ante, in imperdiet nulla viverra at.
-                Donec tincidunt purus nisi, in fermentum nibh efficitur sit amet. Sed aliquet, est in tincidunt consequat, quam lorem varius eros, eu
-                luctus purus tortor eu arcu.</motion.p>
+              <motion.p variants={item}> Curabitur quis libero ullamcorper, vulputate ipsum non, malesuada ipsum. Nam facilisis tellus ante, in imperdiet nulla viverra at. Donec tincidunt 
+              purus nisi, in fermentum nibh efficitur sit amet. Sed aliquet, est in tincidunt consequat, quam lorem varius eros, eu luctus purus tortor eu arcu.</motion.p>
               <motion.div variants={item} className="button"><Link href={"/contact"}><a>Get Started</a></Link></motion.div>
             </motion.div>
           </div>
