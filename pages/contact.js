@@ -37,7 +37,7 @@ const container = {
 const Contact = () => {
     return (
         <>
-            <SubpageHeader />
+            <SubpageHeader title="Contact Us" desc="Add your subpage description here."/>
 
             <div  className={[subpage.standout, "section"].join(" ")}>
                 <div className="row">

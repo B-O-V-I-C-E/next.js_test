@@ -3,11 +3,42 @@ import Link from "next/link";
 import CTA from "../../comps/CTA";
 import SubpageHeader from "../../comps/Subpage-head";
 import subpage from "../../styles/Subpage.module.css";
+import { motion } from "framer-motion";
+
+const container = {
+    hidden: {
+        opacity: 0,
+        scale: .98,
+        transition: {
+            staggerChildren: 0.25,
+        }
+    },
+    show: {
+        opacity: 1,
+        scale: 1,
+        transition: {
+            staggerChildren: 0.25,
+        }
+    }
+}
+
+const item = {
+    hidden: {
+        opacity: 0,
+        scale: .98,
+        translateX: '-50px',
+    },
+    show: {
+        opacity: 1,
+        scale: 1,
+        translateX: '0px',
+    },
+}
 
 const About = () => {
     return (
         <>
-            <SubpageHeader />
+            <SubpageHeader title="About Us" desc="Add your subpage description here." />
 
             <div className={[subpage.standout, "section"].join(" ")}>
 
@@ -15,13 +46,13 @@ const About = () => {
 
                     <div className="col">
 
-                        <div className="text_block left">
-                            <h2>This is the first section</h2>
-                            <p> Curabitur quis libero ullamcorper, vulputate ipsum non, malesuada ipsum. Nam facilisis tellus ante, in imperdiet nulla viverra at.
+                        <motion.div className="text_block left" variants={container} initial={"hidden"} whileInView={"show"} viewport={{ amount: "some", margin: "-150px", once: true }}>
+                            <motion.h2 variants={item}>This is the first section</motion.h2>
+                            <motion.p variants={item}> Curabitur quis libero ullamcorper, vulputate ipsum non, malesuada ipsum. Nam facilisis tellus ante, in imperdiet nulla viverra at.
                                 Donec tincidunt purus nisi, in fermentum nibh efficitur sit amet. Sed aliquet, est in tincidunt consequat, quam lorem varius eros, eu
-                                luctus purus tortor eu arcu.</p>
-                            <div className="button"><Link href={"/contact"}><a>Get Started</a></Link></div>
-                        </div>
+                                luctus purus tortor eu arcu.</motion.p>
+                            <motion.div variants={item} className="button"><Link href={"/contact"}><a>Get Started</a></Link></motion.div>
+                        </motion.div>
 
                     </div>
 
@@ -39,13 +70,13 @@ const About = () => {
 
                     <div className="col">
 
-                        <div className="text_block left">
-                            <h2>This is the first section</h2>
-                            <p> Curabitur quis libero ullamcorper, vulputate ipsum non, malesuada ipsum. Nam facilisis tellus ante, in imperdiet nulla viverra at.
+                    <motion.div className="text_block left" variants={container} initial={"hidden"} whileInView={"show"} viewport={{ amount: "some", margin: "-150px", once: true }}>
+                            <motion.h2 variants={item}>This is the first section</motion.h2>
+                            <motion.p variants={item}> Curabitur quis libero ullamcorper, vulputate ipsum non, malesuada ipsum. Nam facilisis tellus ante, in imperdiet nulla viverra at.
                                 Donec tincidunt purus nisi, in fermentum nibh efficitur sit amet. Sed aliquet, est in tincidunt consequat, quam lorem varius eros, eu
-                                luctus purus tortor eu arcu.</p>
-                            <div className="button"><Link href={"/contact"}><a>Get Started</a></Link></div>
-                        </div>
+                                luctus purus tortor eu arcu.</motion.p>
+                            <motion.div variants={item} className="button"><Link href={"/contact"}><a>Get Started</a></Link></motion.div>
+                        </motion.div>
                     </div>
 
                     <div className="col">
@@ -58,21 +89,21 @@ const About = () => {
 
                     <div className="col">
 
-                        <div className="text_block left">
-                            <h3>This is the first section</h3>
-                            <p> Curabitur quis libero ullamcorper, vulputate ipsum non, malesuada ipsum. Nam facilisis tellus ante, in imperdiet nulla viverra at.
-                                Donec tincidunt purus nisi.</p>
-                        </div>
+                        <motion.div className="text_block left" variants={container} initial={"hidden"} whileInView={"show"} viewport={{ amount: "some", margin: "-150px", once: true }}>
+                            <motion.h3 variants={item}>This is a blurb</motion.h3>
+                            <motion.p variants={item}>Curabitur quis libero ullamcorper, vulputate ipsum non, malesuada ipsum. Nam facilisis tellus ante, 
+                            in imperdiet nulla viverra at. Donec tincidunt purus nisi.</motion.p>
+                        </motion.div>
 
                     </div>
 
                     <div className="col">
 
-                        <div className="text_block right">
-                            <h3>This is the first section</h3>
-                            <p> Curabitur quis libero ullamcorper, vulputate ipsum non, malesuada ipsum. Nam facilisis tellus ante, in imperdiet nulla viverra at.
-                                Donec tincidunt purus nisi.</p>
-                        </div>
+                        <motion.div className="text_block right" variants={container} initial={"hidden"} whileInView={"show"} viewport={{ amount: "some", margin: "-150px", once: true }}>
+                            <motion.h3 variants={item}>This is a blurb</motion.h3>
+                            <motion.p variants={item}>Curabitur quis libero ullamcorper, vulputate ipsum non, malesuada ipsum. Nam facilisis tellus ante, 
+                            in imperdiet nulla viverra at. Donec tincidunt purus nisi.</motion.p>
+                        </motion.div>
 
                     </div>
 
@@ -82,21 +113,21 @@ const About = () => {
 
                     <div className="col">
 
-                        <div className="text_block left">
-                            <h3>This is the first section</h3>
-                            <p> Curabitur quis libero ullamcorper, vulputate ipsum non, malesuada ipsum. Nam facilisis tellus ante, in imperdiet nulla viverra at.
-                                Donec tincidunt purus nisi.</p>
-                        </div>
+                        <motion.div className="text_block left" variants={container} initial={"hidden"} whileInView={"show"} viewport={{ amount: "some", margin: "-150px", once: true }}>
+                            <motion.h3 variants={item}>This is a blurb</motion.h3>
+                            <motion.p variants={item}>Curabitur quis libero ullamcorper, vulputate ipsum non, malesuada ipsum. Nam facilisis tellus ante, 
+                            in imperdiet nulla viverra at. Donec tincidunt purus nisi.</motion.p>
+                        </motion.div>
 
                     </div>
 
                     <div className="col">
 
-                        <div className="text_block right">
-                            <h3>This is the first section</h3>
-                            <p> Curabitur quis libero ullamcorper, vulputate ipsum non, malesuada ipsum. Nam facilisis tellus ante, in imperdiet nulla viverra at.
-                                Donec tincidunt purus nisi.</p>
-                        </div>
+                        <motion.div className="text_block right" variants={container} initial={"hidden"} whileInView={"show"} viewport={{ amount: "some", margin: "-150px", once: true }}>
+                            <motion.h3 variants={item}>This is a blurb</motion.h3>
+                            <motion.p variants={item}>Curabitur quis libero ullamcorper, vulputate ipsum non, malesuada ipsum. Nam facilisis tellus ante, 
+                            in imperdiet nulla viverra at. Donec tincidunt purus nisi.</motion.p>
+                        </motion.div>
 
                     </div>
 
@@ -110,12 +141,13 @@ const About = () => {
 
                     <div className="col">
 
-                        <div className="text_block right">
-                            <h2>This is the first section</h2>
-                            <p> Curabitur quis libero ullamcorper, vulputate ipsum non, malesuada ipsum. Nam facilisis tellus ante, in imperdiet nulla viverra at.
+                        <motion.div className="text_block right" variants={container} initial={"hidden"} whileInView={"show"} viewport={{ amount: "some", margin: "-150px", once: true }}>
+                            <motion.h2 variants={item}>This is the first section</motion.h2>
+                            <motion.p variants={item}> Curabitur quis libero ullamcorper, vulputate ipsum non, malesuada ipsum. Nam facilisis tellus ante, in imperdiet nulla viverra at.
                                 Donec tincidunt purus nisi, in fermentum nibh efficitur sit amet. Sed aliquet, est in tincidunt consequat, quam lorem varius eros, eu
-                                luctus purus tortor eu arcu.</p>
-                        </div>
+                                luctus purus tortor eu arcu.</motion.p>
+                        </motion.div>
+
                     </div>
 
                 </div>

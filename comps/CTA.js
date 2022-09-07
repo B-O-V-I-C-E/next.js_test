@@ -22,12 +22,12 @@ const item = {
     hidden: {
         opacity: 0,
         scale: .98,
-        translateX: '-100px',
+        translateY: '50px',
     },
     show: {
         opacity: 1,
         scale: 1,
-        translateX: '0px',
+        translateY: '0px',
     },
 }
 

@@ -127,7 +127,7 @@ img:not(.logo img) {
   margin-right: 5%;
 }
 
-.col + .col {
+.col:last-child {
   margin-right: 0;
 }
 

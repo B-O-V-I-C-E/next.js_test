@@ -31,15 +31,16 @@ const item = {
     },
 }
 
-const SubpageHeader = () => {
+const SubpageHeader = (props) => {
+    console.log(props);
     return (
         <AnimatePresence><motion.div className={[subpage.subPageHeader, "section"].join(" ")}
             variants={container} initial="hidden" whileInView={"show"} exit={{ scaleY: 0 }} viewport={{ amount: "some", margin: "-150px" }}>
 
             <div className="row">
                 <div className="col">
-                    <motion.h1 variants={item}>page.name</motion.h1>
-                    <motion.p variants={item}>Add your subpage description here</motion.p>
+                    <motion.h1 variants={item}>{props.title}</motion.h1>
+                    <motion.p variants={item}>{props.desc}</motion.p>
                 </div>
             </div>
             

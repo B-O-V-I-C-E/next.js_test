@@ -3,6 +3,7 @@ import Link from "next/link";
 import CTA from "../comps/CTA";
 import styles from "../styles/Home.module.css";
 import { motion, AnimatePresence } from "framer-motion";
+import Card from "../comps/Card";
 
 const container = {
   hidden: {
@@ -48,6 +49,28 @@ export default function Home() {
           </div>
         </div>
       </motion.div></AnimatePresence>
+
+      <div className="section">
+        <div className="row">
+
+          <div className="col">
+            <Card title="Card 1" desc="Put your card description here"/>
+          </div>
+
+          <div className="col">
+            <Card title="Card 2" desc="Put your card description here"/>
+          </div>
+
+          <div className="col">
+            <Card title="Card 3" desc="Put your card description here"/>
+          </div>
+
+          <div className="col">
+            <Card title="Card 4" desc="Put your card description here"/>
+          </div>
+
+        </div>
+      </div>
 
       <div className="section">
 
